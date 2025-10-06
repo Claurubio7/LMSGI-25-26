@@ -1,0 +1,67 @@
+/*MODELO DE CAJAS - CSS
+El espacio que ocupoa un párrafo en la pantalla
+Qué significa que ocupa --> que ningún otro párrafo o elemento puede ocupar, es decir, que es suyo
+margin-padding-border */
+
+
+/* estructura de un selector css:
+    nombre_del_selector {
+        propiedad1: valor;
+        propiedad2: valor;
+        propiedad3: valor;
+        ...
+        propiedadN: valor;
+    }
+*/
+
+
+/* selecctor de tipo (etiqueta html) */
+h1{
+    /* formatos a la fuente/letra */
+    color: rgb(5, 97, 150);
+    font-size: 30px; /*tamaño de letra*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100; /*grosor de la letra*/
+    font-style: oblique; /*cursiva*/
+    text-decoration: underline; /*subrayado*/
+    text-decoration: overline; /*subrayado po arriba*/ 
+    text-transform: uppercase; /*toda la letra en mayúscula*/
+    text-transform: lowercase; /*todo en minúscula*/
+    text-transform: capitalize; /*La primera de cada palabra en mayúscula*/
+    letter-spacing: 5px; /*espacio entre letras*/
+    word-spacing:20px ; /*espacio entre palabras*/
+
+    /*formatos al párrafo*/
+    text-align: center;
+}
+
+p{
+    text-align:justify; /*repartir el espacio sobrante entre las líneas del párrafo / pone el párrafo a todo lo largo*/
+    line-height:1.5 ; /*interlineado*/
+    text-indent: 20px; /* sangría en la primera linea*/
+   
+    margin: 20px;
+    /*border: distancia del borde al exterior*/
+    border: 2px solid rgb(193, 103, 148); /*borde alrededor de los párrafos, tipo dentro de una caja*/
+    padding: 10px; /*espacio entre el borde y el contenido, es decir, distancia de el texto al borde*/
+    border-radius: 20px; /*hace la esquinas redondas de los bordes*/
+    border-top-left-radius: 50px ;
+    border-bottom-right-radius:50px ;
+    /*background-color: rgb(228, 199, 213); /*color dentro de la "caja-borde"*/
+    background-color: rgba(228, 199, 213, 0.6); /*El cuarto párametro es la transparencia (0 no se ve nada y el 1 el color base)*/
+    /*color: white; /*color de el texto*/
+
+
+    /*border: 2px dashed rgb(193, 103, 148); hace el borde interlineado
+    /*border-top: 2px solid rgb(194, 111, 153); /*arriba*/
+    
+    /*margin: 20px 50px 30px 10px; /*margen superior, derecho, inferior, izquierdo*
+    margen: arriba - derecha - abajo - izquierda 
+    margin: 10px; /*margenes a todo los lados*
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 100px; /*arriba*
+    margin-bottom: 20px; /*abajo
+    margin: 200px 50px; margen arriba-abajo y derecha-izquierda*/
+
+}
