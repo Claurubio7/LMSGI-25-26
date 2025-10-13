@@ -1,0 +1,33 @@
+/*FLEXBOX
+IMPORTANTE --> estás propiedades se hacen sobre el padre 
+--> Display:flex
+--> flex-direction: row(a, b, c)/ row-reverse(c, b, a)/ column/ column-reverse
+--> justify-content: izq/der/centro
+--> aling-items: alineación vertical
+--> flex-wrap: nowrap(una fila)/ wrap (múltiples filas)
+
+** row(a, b, c)/ row-reverse(c, b, a) --> implica el orden en el que aparece los hijos --> igual con column
+
+Contenedor es flexible --> Display:flex
+Contenedor --> elemento padre, contiene, ítems
+ítem --> cada unos de los hijos flexibles
+
+1) flex-direction: row --> eje principal(fila)
+justify-content --> justificar, alinear en el eje principal,  izq/centro/der
+justify-content-flex-start --> izquierda
+justify-content-flex-end --> derecha
+
+
+2) flex-direction: colum --> eje secundario (columna)
+aling-items: --> justifica en el eje secundario,
+justify-content-flex-start --> arriba
+justify-content-flex-flesen --> abajo
+space-around: --> los distribuye
+
+* Flex-wrap: nowrap --> todos los elementos se meten en una fila
+Flex-wrap: wrap --> poner a los hijos en múltiples filas
+
+
+
+
+*/

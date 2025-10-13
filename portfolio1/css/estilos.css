@@ -37,8 +37,8 @@ header{
     /*Flexblox*/
     display:flex ; /*Modelo de cajas flexible: contenedeor flexible*/
     flex-direction: row; /*dirección de los ítems (horizontales/ FILA)*/
-    flex-wrap: nowrap; /*no permitir salto de línea entre ítems*/
-    justify-content: space-between; /*alineación horizontal de los ítems*/
+    flex-wrap: nowrap; /*todos los hijos en una SOLA FILA*/
+    justify-content: space-between; /*tal de los elementos hijos */
 }
 
 /*Selector descendiente
@@ -55,7 +55,7 @@ header figure{
 
 header figure img {
     height: 100%;
-    
+
 }
 
 
@@ -65,6 +65,15 @@ header h1{
     text-align: center;
     border: 2px solid black; /*Guiarse del tamaño del bloque del h1*/
     margin-right: 50px;
+    display: flex;
+    /* op 2 */
+    flex-direction: column;
+    justify-content: center;
+
+    /* op1
+    /*flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;*/ /*Alineación vertical de los hijos*/
 }
 
 
@@ -74,7 +83,7 @@ header nav{ /*Elemento de Bloque*/
     text-align: center;
     padding: 10px; /*espacio entre el borde y el contenido, es decir, distancia de el texto al borde*/
     display: flex;
-    flex-direction: row; /*dirección de los elementos hijos*/
+    flex-direction: row; /*dirección de los elementos hijos en*/
     flex-wrap:nowrap ; /*Todos los hijos en una sola línea*/
     justify-content: space-around;
     align-items: center; /*alineación vertical de los elementos hijos*/
@@ -104,8 +113,23 @@ main{
     height: 78vh; /*80% de la altura de la ventana(body)*/
     background-color: aliceblue;
     padding: 10px;
+    display: flex;
+    flex-direction: row; /* dirección de los elementos hijos */
+}
+main nav{
+    border:2px solid black;
+    flex-basis: 20%; /* darle ancho en la ventana */
 }
 
+main section {
+    border:2px solid black;
+    flex-basis: 60%;
+}
+
+main aside{
+    border:2px solid black;
+    flex-basis: 20%;
+}
 
 footer{
     height: 10vh; /*10% de la altura de la ventana(body)*/
@@ -113,5 +137,4 @@ footer{
     padding-top: 20px;
     color: white;
     text-align: center;
-    
-}
+}   
