@@ -27,6 +27,9 @@ space-around: --> los distribuye
 * Flex-wrap: nowrap --> todos los elementos se meten en una fila
 Flex-wrap: wrap --> poner a los hijos en múltiples filas
 
+flex-basis --> hace de widt(ancho) o height(altura)
+widt --> pq la propiedad flex-direction=row
+height --> pq la propiedad flex-direction=colum
 
 
 

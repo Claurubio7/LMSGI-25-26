@@ -129,6 +129,41 @@ main section {
 main aside{
     border:2px solid black;
     flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; --> le da la vuelta */
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+main div#vistos{
+    background-color: rgb(97, 109, 121);
+    border: 2px solid black;
+    flex-basis: 33.3%;
+    /* order: 3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+main div#baratos{
+    background-color: rgb(184, 218, 248);
+    border: 2px solid black;
+    flex-basis: 33.3%;
+    /* order: 1; -->  se le pone el orden visual */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+main div#ofertas{
+    background-color: rgb(106, 118, 127);
+    border: 2px solid black;
+    flex-basis: 33.4%;
+    /* order: 2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer{
@@ -137,4 +172,19 @@ footer{
     padding-top: 20px;
     color: white;
     text-align: center;
+    display: flex; /* contenedor flexible */
+    flex-direction: row; /*eje principal: fila*/
+    flex-wrap: nowrap; /*en la misma fila/linea*/
 }   
+
+footer nav{
+   background-color: blueviolet;
+   /* tamaño ancho o alto */
+   flex-basis: 50%;
+}
+
+footer div{
+    background-color: blue;
+    flex-basis: 50%;
+
+}
